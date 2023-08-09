@@ -74,6 +74,7 @@ input, select, textarea {
 
 /* Basic */
 
+
 	@-ms-viewport {
 		width: device-width;
 	}
@@ -141,7 +142,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: "Source Sans Pro", sans-serif; /*FONTE Geral*/
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
@@ -198,8 +199,16 @@ input, select, textarea {
 			margin: 0 0 2rem 0;
 		}
 
-	h1 {
-		font-size: 2.25rem;
+	@font-face {/*CRIADO PARA FONTE CS*/
+		font-family: 'fontecs' ;
+		src: url("cs_regular.ttf"); 
+		format('truetype');
+		font-weight: normal;
+		font-size: normal;
+	}
+		h1 {
+		font-size: 5.25rem;
+		font-family: 'fontecs','Times New Roman', Times, serif; /*FONTE TITULO*/
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
 	}
@@ -1140,9 +1149,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
