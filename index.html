@@ -35,6 +35,7 @@
 						<nav>
 							<ul>
 								<li><a href="#intro">SERVIDORES</a></li>
+								<li><a href="#live">LIVE</a></li>
 								<li><a href="#work">ADMINs</a></li>
 								<li><a href="#about">BANIMENTOS</a></li>
 								<li><a href="#contact">CONTATO</a></li>
@@ -50,14 +51,41 @@
 							<article id="intro">
 								<h2 class="major">LISTA DE SERVIDORES ATUALIZADA</h2>
 								<a href="https://www.gametracker.com/server_info/177.54.151.114:27244/" target="_blank"><img src="https://cache.gametracker.com/server_info/177.54.151.114:27244/b_560_95_1.png" border="0" width="560" height="95" alt=""/></a>
-								<p>4FUN: 177.54.151.114:27244</p>									
+								<p>4FUN1: 177.54.151.114:27244</p>									
 								<a href="https://www.gametracker.com/server_info/177.54.151.114:27049/" target="_blank"><img src="https://cache.gametracker.com/server_info/177.54.151.114:27049/b_560_95_1.png" border="0" width="560" height="95" alt=""/></a>
 								<p>CLÁSSICO: 177.54.151.114:27049</p>									
 								<a href="https://www.gametracker.com/server_info/131.196.198.52:27057/" target="_blank"><img src="https://cache.gametracker.com/server_info/131.196.198.52:27057/b_560_95_1.png" border="0" width="560" height="95" alt=""/></a>
+								<p>MINIMAPS: 131.196.198.52:27057</p>
+								<a href="https://www.gametracker.com/server_info/35.199.82.11:27015/" target="_blank"><img src="https://cache.gametracker.com/server_info/35.199.82.11:27015/b_560_95_1.png" border="0" width="560" height="95" alt=""/></a>
 								<p>MIX: 131.196.198.52:27057</p>
 									<p>O servidor 4fun está entre os melhores servidores 4fun do Brasil. Ele possui ranking, menu de armas,paraquedas, facada "hit kill" (uma facada com o botão ESQUERDO do mouse é fatal), balanceamento automático, skins personalizadas,antiuck system, músicas e a cada 30 rounds vira o jogo. O servidor clássico é ideal para os jogadores que gostam de comprar armas do jeito clássico. O primeiro round é de faca e depois você começa com 800$ para comprar armas. Possui um curto freezetime para compras, não é possível ver o dano causado no oponente,não tem paraquedas, tem ranking, auto balance e a cada 30 rounds o jogo muda. Nesse servidor, também é possível comprar a teco-teco e o escudo CT. É literalmente um jogo clássico de CS 1.6, como costumava ser antigamente nas lan houses. O servidor de MIX é o clássico competitivo 5x5.</p>
 
 							</article>
+						<!-- live -->
+							<article id="live">
+								<h2 class="major">LIVE STREAMING</h2>
+								<div id="ytplayer"></div>
+
+								<script>
+								// Load the IFrame Player API code asynchronously.
+								var tag = document.createElement('script');
+								tag.src = "https://www.youtube.com/player_api";
+								var firstScriptTag = document.getElementsByTagName('script')[0];
+								firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+								// Replace the 'ytplayer' element with an <iframe> and
+								// YouTube player after the API code downloads.
+								var player;
+								function onYouTubePlayerAPIReady() {
+									player = new YT.Player('ytplayer', {
+									height: '360',
+									width: '640',
+									videoId: 'M7lc1UVf-VE'
+									});
+								}
+								</script>
+							</article>
+							
 
 						<!-- Work -->
 							<article id="work">
